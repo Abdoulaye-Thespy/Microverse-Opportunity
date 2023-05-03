@@ -1,0 +1,32 @@
+<!-- A simple html login page using html, css and js -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="login-container">
+		<h1>Login</h1>
+		<form>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit" onclick="login()">Login</button>
+		</form>
+	</div>
+	
+	<script>
+		function login() {
+			const username = document.getElementById("username").value;
+			const password = document.getElementById("password").value;
+			if (username == "username" && password == "password") {
+				alert("Login successful!");
+			} else {
+				alert("Incorrect username or password.");
+			}
+		}
+	</script>
+</body>
+</html>
